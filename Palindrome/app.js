@@ -10,10 +10,10 @@ const check_palindrome = str => {
   let strChecked = str.split('').reverse().join('')
   
   if (str === strChecked) {
-    return result.textContent = `${str} is palindrome`
+    return result.textContent = `${str} is a palindrome`
   }
   else {
-    return result.textContent = `${str} is not palindrome`
+    return result.textContent = `${str} is not a palindrome`
   }
 }
 
