@@ -28,11 +28,10 @@ form.addEventListener('submit', (e) => {
 
 // error handling 
 input.addEventListener('keyup', () => {
-  if (isNaN(input.value) || '') {
+  if (isNaN(input.value) || input.value === '') {
     error.style.display = 'none'
   }
   else {
     error.style.display = 'inline'
   }
 })
-
