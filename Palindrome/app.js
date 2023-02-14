@@ -13,10 +13,10 @@ const check_palindrome = str => {
   result.remove()
   form.appendChild(result)
   result.className = 'result'
-  let strChecked = str.split('').reverse().join('')
-  if (str === strChecked && str !== '') {
+  let strChecked = str.toLowerCase().split('').reverse().join('')
+  if (str.toLowerCase() === strChecked && str !== '') {
     return result.textContent = `${str} is a palindrome`
-  } else if (str !== strChecked) {
+  } else if (str.toLowerCase() !== strChecked) {
     return result.textContent = `${str} is not a palindrome`
   } else if (str == '') {
     error.style.display = 'inline'
