@@ -12,12 +12,12 @@ const check_palindrome = str => {
   form.appendChild(result)
   result.className = 'result'
   let strChecked = str.split('').reverse().join('')
-  if (str === strChecked) {
-    document.remo
+  if (str === strChecked && str !== '') {
     return result.textContent = `${str} is a palindrome`
-  }
-  else {
+  } else if (str !== strChecked) {
     return result.textContent = `${str} is not a palindrome`
+  } else if (str === '') {
+    error.style.display = 'inline'
   }
 }
 
