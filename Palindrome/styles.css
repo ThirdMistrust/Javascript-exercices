@@ -1,6 +1,7 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Satoshi, sans-serif;
   font-weight: 300;
+  font-size: 50px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,6 +21,7 @@ section {
 
 .row {
   width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -35,9 +37,9 @@ section {
   min-height: 100vh;
 }
 
-section .container {
+/* section .container {
   padding: 2em;
-}
+} */
 
 .top-container {
   margin: auto;
@@ -45,24 +47,28 @@ section .container {
 
 #error {
   color: #8B0000;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 200;
 }
 
 #user-input {
+  width: 500px;
   border-radius: 3px;
-  padding: 5px;
+  padding: 15px;
   border: none;
 }
 
 .result {
-  padding: 10px;
+  font-size: 30px;
+  padding: 15px;
 }
 
 /* Button  */
 
 .button-success {
+  width: 120px;
   background: #329239;
   border-radius: 4px;
   border: none;
-  padding: 5px;
+  padding: 15px;
 }
