@@ -8,6 +8,7 @@ error.style.display = 'none'
 
 // function that compares the user input and its inverse 
 const check_palindrome = str => {
+  // remove the last result
   result.remove()
   form.appendChild(result)
   result.className = 'result'
@@ -16,7 +17,7 @@ const check_palindrome = str => {
     return result.textContent = `${str} is a palindrome`
   } else if (str !== strChecked) {
     return result.textContent = `${str} is not a palindrome`
-  } else if (str === '') {
+  } else if (str == '') {
     error.style.display = 'inline'
   }
 }
