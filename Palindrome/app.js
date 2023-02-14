@@ -32,7 +32,9 @@ form.addEventListener('submit', (e) => {
 
 // error handling 
 input.addEventListener('keyup', () => {
-  if (isNaN(input.value) || input.value === '') {
+  const regExpression = /^[a-zA-Z]+$/
+  
+  if (regExpression.test(input.value) || input.value == '') {
     error.style.display = 'none'
   }
   else {
