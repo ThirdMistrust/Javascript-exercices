@@ -2,6 +2,7 @@ let user_input;
 // selection of elements
 let form = document.querySelector('#form')
 let input = document.querySelector('#user-input')
+let submit = document.querySelector('.button-success')
 let error = document.querySelector('#error')
 let result = document.createElement('div')
 error.style.display = 'none'
@@ -33,11 +34,15 @@ form.addEventListener('submit', (e) => {
 // error handling 
 input.addEventListener('keyup', () => {
   const regExpression = /^[a-zA-Z]+$/
-  
+  submit.style.backgroundColor = '#329239'
   if (regExpression.test(input.value) || input.value == '') {
     error.style.display = 'none'
+    submit.disabled = false
   }
   else {
+    // submit.body.style.backgroundColor = 'grey'
     error.style.display = 'inline'
+    submit.disabled = true
+    submit.style.backgroundColor = 'grey'
   }
 })
