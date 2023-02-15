@@ -40,7 +40,6 @@ input.addEventListener('keyup', () => {
     submit.disabled = false
   }
   else {
-    // submit.body.style.backgroundColor = 'grey'
     error.style.display = 'inline'
     submit.disabled = true
     submit.style.backgroundColor = 'grey'
