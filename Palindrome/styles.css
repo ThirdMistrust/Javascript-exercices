@@ -20,15 +20,29 @@ section {
 }
 
 .row {
-  width: 100%;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
 }
 
 #sec-one h1 {
-  margin: 20px;
+  white-space: nowrap;
+  margin: auto;
 }
 
 #sec-one {
@@ -36,45 +50,36 @@ section {
   min-height: 100vh;
 }
 
-/* section .container {
-  padding: 2em;
-} */
-
 .top-container {
   margin: auto;
 }
 
 #error {
   color: #8B0000;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 200;
 }
 
 #user-input {
   width: 500px;
-  border-radius: 3px;
   padding: 15px;
   border: none;
 }
 
 .result {
-  font-size: 30px;
+  font-size: 25px;
   padding: 15px;
 }
 
 /* Button  */
 
 .button-success {
-  width: 120px;
-  background: #329239;
-  border-radius: 4px;
+  background-color: #329239;
   border: none;
-  padding: 15px;
-}
-
-@media (max-width: 800px) {
-  .container {
-    width: 100%;
-    flex-direction: column;
-  }
+  color: white;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
