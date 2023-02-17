@@ -1,6 +1,6 @@
 # Palindrome Checker
 
-[Palindrome Checker](https://palindrome-m8ck.onrender.com/) is a tool to check if a given word is a palindrome or not.
+[Palindrome Checker](https://palindrome-m8ck.onrender.com/) is a tool to check if a given word is a palindrome.
 Only Latin-script alphabet is accepted.
 
 - Dynamic rendering HTML in Javacript
