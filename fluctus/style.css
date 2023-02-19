@@ -80,3 +80,11 @@ body {
   font-weight: 600;
   margin-top: -30px;
 }
+
+.coin.rising .coin-price .price {
+  color: #30ff20;
+}
+
+.coin.falling .coin-price .price {
+  color: #ff4040;
+}
