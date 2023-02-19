@@ -20,11 +20,11 @@ body {
   width: 460px;
   height: 100px;
   border-radius: 8px;
-/* Created with https://www.css-gradient.com */
   background: #363636;
   background: -webkit-radial-gradient(left, #363636, #191A1A);
   background: -moz-radial-gradient(left, #363636, #191A1A);
   background: radial-gradient(to right, #363636, #191A1A);
+  font-family: 'Roboto', sans-serif;
 }
 
 .coin .coin-logo {
@@ -40,7 +40,6 @@ body {
 }
 
 .coin .coin-name {
-  font-family: 'Roboto', sans-serif;
   height: 100%;
   display: flex;
   justify-content: flex-start;
