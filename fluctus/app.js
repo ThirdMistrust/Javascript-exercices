@@ -11,7 +11,7 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=cardano%2Cethereum%2Cbi
       const price = coinInfo.usd;
       const change = coinInfo.usd_24h_change.toFixed(5)
       container.innerHTML += `
-        <div class="coin ${change < 0 ? 'failling' : 'rising'} ">
+        <div class="coin ${change < 0 ? 'falling' : 'rising'} ">
           <div class="coin-logo">
             <img src="images/${coin}.webp"/>
           </div>
