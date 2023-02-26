@@ -12,22 +12,28 @@
 </head>
 <body>
   <section id="sec-one">
-    <div class="container top-container">
-      <div class="row">
-        <h1>Palindrome checker</h1>
-      </div>
-      <div class="row">
-        <form id="form">
-          <div class="form-container">
-            <input id="user-input">
-            <button type="submit" class="button-success pure-button">Check</button>
+      <div class="container top-container">
+        <div class="block-container">
+          <div class="row">
+            <h1>Palindrome checker</h1>
           </div>
-          <div class="error-container">
-            <small id="error">You must enter a word</small>
+          <div class="row">
+            <form id="form">
+              <div class="form-container">
+                <div class="input">
+                  <input id="user-input">
+                </div>
+                <div class="button">
+                  <button type="submit" class="button-success pure-button">Check</button>
+                </div>
+              </div>
+              <div class="error-container">
+                <small id="error">You must enter a word</small>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
   </section>
   <script src="app.js"></script>
 </body>

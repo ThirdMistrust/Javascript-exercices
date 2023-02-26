@@ -1,6 +1,5 @@
 body {
   font-family: 'Roboto', sans-serif;
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,10 +10,17 @@ section {
   display: flex;
 }
 
+.block-container {
+  background-color: #fefeff;
+  width: 500px;
+  height: 300px;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   margin: 0 auto;
 }
 
@@ -29,8 +35,9 @@ section {
 
 .form-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  width: 100%;
 }
 
 .error-container {
@@ -43,6 +50,7 @@ section {
   font-size: 50px;
   white-space: nowrap;
   margin: auto;
+  padding: 30px;
   width: 100%;
 }
 
@@ -61,10 +69,17 @@ section {
   font-weight: 200;
 }
 
+/* .input {
+  display: flex;
+} */
+
 #user-input {
-  width:100%;
+  /* width:100%; */
+  margin: 15px;
   padding: 15px;
-  border: none;
+  border: 0.1rem solid #dcdcdc;
+  border-radius: 3px;
+  outline: none;
 }
 
 .result {
@@ -74,13 +89,18 @@ section {
 
 /* Button  */
 
+/* .button {
+} */
+
 .button-success {
   background-color: #329239;
   border: none;
+  border-radius: 5px;
   color: white;
   padding: 13px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  width: 100%;
 }
